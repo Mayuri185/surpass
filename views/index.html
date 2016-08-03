@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title>Upload File</title>
+		<style>
+		html, body{
+			margin:0;
+		}
+			form {
+				width: 400px;
+				height: 150px;
+				/*background-color: #FAE600;*/
+				margin: auto;
+				padding: 20px;
+				border: 2px solid black;
+			}
+		  input[type="file" i]::-webkit-file-upload-button, button{
+				  /* background: #424242; */
+  height: 50px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 24px 6px;
+  border-radius: 0;
+  background: #666 none repeat scroll 0 0;
+  color: #fff;
+  font-family: "Carnas-Regular";
+  display: inline-block;
+  width: 65%;
+  text-align: center;
+  padding: 12px 0;
+			}
+			
+			form input[type='file'] {
+				
+				display: block;
+				margin:10px auto 20px;
+				font-size:16px;
+				padding:10px;
+				
+			}
+			form input[type='submit'] {
+				margin: auto;
+				width: 38%;
+				display: block;
+				
+				color: #fff;
+			  border: none;
+			  font-size: 16px;
+			  cursor: pointer;
+			  padding: 5px 24px 6px;
+			  border-radius: 0 ;
+			  background: transparent;
+			  border: 1px solid #e1e0e7;
+			  border-radius: 30px;
+			  color: #414142;
+			  padding: 10px 40px;
+			  margin-top: 16px;
+			  font-family: "Carnas-Thin";
+			  font-size: 1.125rem;
+			  margin-bottom: 0;
+			  
+			}
+			form input[type='submit']:hover {
+			  background: #f0f0f0;
+			}
+			h1{
+				text-align:center;
+				color:#424242;
+			}
+			.header{
+				  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+				  height:60px;
+				  /*padding:5px;*/
+			}
+				.header img{
+				  position: absolute;
+  left: 14%;
+  top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="http://www.synechron.com/sites/all/themes/synechron/images/logo.png" />
+		</div>
+		<h1>Upload Surpass Nominee list </h1>
+		<form ref='uploadForm'
+		id='uploadForm'
+		action='http://localhost:8002/upload'
+		method='post'
+		encType="multipart/form-data">
+			<input type="file" name="sampleFile" />
+			<input type='submit' value='Upload' />
+		</form>
+	</body>
+</html>

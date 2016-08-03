@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>download</title>
+		<style>
+			form {
+				width: 400px;
+				height: 50px;
+				/*background-color: #FAE600;*/
+				margin: auto;
+				padding: 20px;
+				border: 2px solid black;
+				
+			}
+					form input[type='submit'] {
+				margin: auto;
+				width: 38%;
+				display: block;
+			  border: none;
+			  font-size: 16px;
+			  cursor: pointer;
+			  padding: 5px 24px 6px;
+			  border-radius: 0 ;
+			  background: transparent;
+			  border: 1px solid #e1e0e7;
+			  border-radius: 30px;
+			  color: #414142;
+			  padding: 10px 40px;
+			  font-family: "Carnas-Thin";
+			  font-size: 1.125rem;
+			  margin-bottom: 0;
+			  
+			}
+			form input[type='submit']:hover {
+			  background: #f0f0f0;
+			}
+			h1{
+				text-align:center;
+				color:#424242;
+			}
+			.header{
+				  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+				  height:60px;
+				  /*padding:5px;*/
+			}
+				.header img{
+				  position: absolute;
+  left: 14%;
+  top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="http://www.synechron.com/sites/all/themes/synechron/images/logo.png" />
+		</div>
+		<h1>Get your JSON file here</h1>
+		<form 
+		action='http://localhost:8002/download'
+		method='post'>
+			<input type='submit' value='Download' />
+		</form>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<a id="myLink" href="http://www.synechron.com/sites/default/files/white-paper/The-Era-of-IoT.pdf" target="_blank">pdf</a>
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<script>
+		$(document).ready(function(){
+			setTimeout(function(){
+				$("#myLink").get(0).click();
+			},500);
+			
+		});
+	</script>
+</body>
+</html>
